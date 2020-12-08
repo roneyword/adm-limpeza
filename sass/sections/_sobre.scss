@@ -1,0 +1,38 @@
+.container__sobre{
+  .card__sobre{
+    display: flex;
+    .sobre__img{
+      width: 50%;
+      height: auto;
+      img{
+        @extend .img__default;
+        height: 100%;
+      }
+    }
+  
+    .sobre__content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center;
+      width: 50%;
+      padding: 80px;
+  
+      .sobre__content__title{
+        h5{
+          text-align: left;
+          @extend .title;
+        }
+      }
+  
+      .sobre__content__text{
+        p{
+          @extend .sub-title;
+          margin: 20px 0px;
+        }
+      }
+    }
+  }
+
+  
+}

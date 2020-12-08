@@ -1,0 +1,30 @@
+.portifolio{
+  @extend .space-section;
+  background: #F5F5F5;
+
+  .portifolio__title{
+    @extend .title-section;
+
+    h2{
+      @extend .title;
+    }
+  }
+
+  .content__portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    figure{
+      width: 100%;
+      max-width: 450px;
+      min-width: 400px;
+      height: auto;
+      margin-bottom: 20px;
+
+      img{
+        @extend .img__default;
+      }
+    }
+  }
+}

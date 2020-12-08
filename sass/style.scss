@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+// ==========================================================================
+// Abstract
+// ==========================================================================
+
+@import "abstract/functions.scss";
+@import "abstract/variables.scss";
+@import "abstract/mixins.scss";
+
+// ==========================================================================
+// Vendor
+// ==========================================================================
+
+@import "vendor/normalize.scss";
+
+// ==========================================================================
+// Base
+// ==========================================================================
+
+@import "base/fonts.scss";
+@import "base/grid.scss";
+@import "base/btn_default.scss";
+@import "base/global.scss";
+
+// ==========================================================================
+// Section
+// ==========================================================================
+
+@import "sections/home.scss";
+@import "sections/servicos.scss";
+@import "sections/banner_contato.scss";
+@import "sections/sobre.scss";
+@import "sections/portifolio.scss";
+@import "sections/vantagem.scss";
+
+// ==========================================================================
+// Component
+// ==========================================================================
+
+@import "component/header_contato.scss";
+@import "component/header.scss";
+@import "component/card.scss";

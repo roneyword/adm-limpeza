@@ -1,0 +1,36 @@
+
+
+.card{
+  width: 100%;
+  max-width: 400px;
+  min-width: 350px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: pxtoem(10);
+  background: white;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+
+  .car__img{
+    width: 100%;
+    height: auto;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .card__content{
+
+    .card__title{
+      margin: 10px 0px;
+      font-size: pxtoem(25);
+      font-weight: 500;
+    }
+
+    .card__text{
+      font-size: pxtoem(18);
+    }
+  }
+}

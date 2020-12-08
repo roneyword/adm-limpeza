@@ -1,0 +1,123 @@
+.banner-contato {
+  background: $primary;
+  max-width: 100%;
+  margin-top: 150px;
+
+  .contato-content {
+    display: flex;
+
+    .contato-btn {
+      padding: 90px 0px;
+      width: 60%;
+      text-align: center;
+
+      h3 {
+        font-size: pxtoem(35);
+        color: white;
+        margin-bottom: 40px;
+      }
+
+      div {
+        animation: tada 1.5s infinite;
+        a {
+          @extend .btn-default;
+          background: white;
+          color: black;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          i {
+            margin-right: 10px;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+
+    .contato-img {
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 400px;
+        height: auto;
+        bottom: 0px;
+      }
+    }
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media screen and (max-width: 937px) {
+  .banner-contato {
+    .contato-content {
+      .contato-img {
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner-contato {
+    .contato-content {
+      .contato-btn {
+        width: 100%;
+      }
+      .contato-img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .banner-contato {
+    .contato-content {
+      .contato-btn {
+        width: 100%;
+
+        h3 {
+          font-size: pxtoem(30);
+        }
+      }
+      .contato-img {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}

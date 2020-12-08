@@ -1,0 +1,41 @@
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/img/home_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 80vh;
+
+  .home__content{
+    text-align: center;
+
+    .home__title{
+      font-size: pxtoem(65);
+      font-weight: 900;
+      color: white;
+    }
+
+    .home__sub-title{
+      h5{
+        font-size: pxtoem(40);
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      h1{
+        font-size: pxtoem(35);
+        color: white;
+      }
+      
+    }
+
+    .home__btn{
+      margin-top: 40px;
+      a{
+        @extend .btn-default;
+      }
+    }
+  }
+}

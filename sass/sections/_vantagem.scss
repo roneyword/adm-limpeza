@@ -1,0 +1,11 @@
+.vantagem{
+  @extend .space-section;
+
+  .vantagem__title{
+    @extend .title-section;
+    
+    h2{
+      @extend .title;
+    }
+  }
+}
