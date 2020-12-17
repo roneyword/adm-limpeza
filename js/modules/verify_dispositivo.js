@@ -15,6 +15,11 @@ export default function verifyDispositivo() {
   
   btnCustomWhats.addEventListener('click', () => {
     let msgCustomerWhats = inputCustomMsgWhats.value;
+    
+    if(msgCustomerWhats == ""){
+      msgCustomerWhats = mensage;
+    }
+    
     isMobile ?
     btnCustomWhats.attributes.href.textContent = "https://wa.me/5511977418876?text=" + replaceWhiteSpace(msgCustomerWhats) :
     btnCustomWhats.attributes.href.textContent = "https://web.whatsapp.com/send?phone=5511977418876&text=" + replaceWhiteSpace(msgCustomerWhats);
