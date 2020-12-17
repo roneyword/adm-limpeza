@@ -1,0 +1,119 @@
+footer {
+  @extend .space-section;
+  background: black;
+
+  .container__footer{
+    width: calc(100% - 40px);
+    max-width: 1300px;
+    margin: 0 auto;
+
+    .footer__content{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      .footer__mapa, .footer__servico, .footer__contato{
+        margin-top: 40px;
+        position: relative;
+
+        ul{
+          li{
+            margin-bottom: 10px;
+            a{
+              font-size: pxtoem(14);
+              color: white;
+              font-weight: 600;
+            }
+          }
+
+          &::after{
+            content: "MAPA DO SITE";
+            position: absolute;
+            top: -60px;
+            min-width: 140px;
+            font-size: pxtoem(18);
+            color: white;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .footer__servico{
+        ul{
+          &::after{
+            content: "SERVIÇOS";
+          }
+        }
+      }
+
+      .footer__contato{
+        ul{
+          &::after{
+            content: "CONTATO";
+          }
+
+          li{
+            a{
+              i{
+                margin-right: 20px;
+                padding: 10px;
+                border-radius: pxtoem(20);
+                background: red;
+              }
+            }
+
+            &:nth-child(1){
+              a{
+                i{
+                  background: $primary;
+                }
+              }
+            }
+
+            &:nth-child(2){
+              a{
+                i{
+                  background:  #34af23;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px){
+  footer{
+    .container__footer{
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 679px){
+  footer {
+    .container__footer{
+      .footer__content{
+        flex-direction: column;
+
+        .footer__mapa, .footer__servico, .footer__contato{
+          margin-top: 80px;
+
+          &:first-child{
+            margin-top: 40px;
+          }
+
+          ul{
+            &::after{
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -33,6 +33,8 @@
 @import "sections/sobre.scss";
 @import "sections/portifolio.scss";
 @import "sections/vantagem.scss";
+@import "sections/contato.scss";
+@import "sections/footer.scss";
 
 // ==========================================================================
 // Component
@@ -41,3 +43,4 @@
 @import "component/header_contato.scss";
 @import "component/header.scss";
 @import "component/card.scss";
+@import "component/modal_lightbox.scss";

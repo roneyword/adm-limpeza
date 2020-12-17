@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -326,14 +327,14 @@ template {
   margin: 0 auto;
   width: calc(100% - 40px); }
 
-.btn-default, .home .home__content .home__btn a, .banner-contato .contato-content .contato-btn div a {
+.btn-default, .home .home__content .home__btn a, .banner-contato .contato-content .contato-btn div a, .contato .container__contato .contato__content .form__contato .btn__enviar {
   background: #121671;
   padding: 15px 50px;
   border-radius: 1.875em;
   color: white;
   font-weight: 600; }
 
-.title, .container__sobre .card__sobre .sobre__content .sobre__content__title h5, .portifolio .portifolio__title h2, .vantagem .vantagem__title h2 {
+.title, .container__sobre .card__sobre .sobre__content .sobre__content__title h5, .portifolio .portifolio__title h2, .vantagem .vantagem__title h2, .contato .contato__title h2 {
   font-size: 2.5em;
   font-weight: 600;
   color: #F6CF00; }
@@ -342,14 +343,14 @@ template {
   font-size: 1.625em;
   color: black; }
 
-.space-section, .portifolio, .vantagem {
+.space-section, .portifolio, .vantagem, .contato, footer {
   padding: 80px 0px; }
 
-.title-section, .portifolio .portifolio__title, .vantagem .vantagem__title {
+.title-section, .portifolio .portifolio__title, .vantagem .vantagem__title, .contato .contato__title {
   margin-bottom: 50px;
   text-align: center; }
 
-.img__default, .container__sobre .card__sobre .sobre__img img, .portifolio .content__portfolio figure img {
+.img__default, .container__sobre .card__sobre .sobre__img img, .portifolio .content__portfolio figure img, .vantagem .container__vantagem .card__vantagem .card__header figure img {
   width: 100%;
   height: auto; }
 
@@ -378,6 +379,27 @@ template {
     .home .home__content .home__btn {
       margin-top: 40px; }
 
+@media (max-width: 527px) {
+  .home {
+    min-height: 80vh; }
+    .home .home__content .home__title {
+      font-size: 3.125em; }
+    .home .home__content .home__sub-title h5 {
+      font-size: 1.875em; }
+    .home .home__content .home__sub-title h1 {
+      font-size: 1.5625em; } }
+@media (max-width: 425px) {
+  .home {
+    min-height: 70vh; }
+    .home .home__content .home__title {
+      font-size: 2.5em; }
+    .home .home__content .home__sub-title h5 {
+      font-size: 1.5625em; }
+    .home .home__content .home__sub-title h1 {
+      font-size: 1.25em; } }
+@media (max-width: 375px) {
+  .home {
+    min-height: 60vh; } }
 .card__container {
   display: flex;
   justify-content: space-around;
@@ -444,6 +466,9 @@ template {
 @media screen and (max-width: 937px) {
   .banner-contato .contato-content .contato-img img {
     width: 300px; } }
+@media screen and (max-width: 933px) {
+  .banner-contato {
+    margin-top: 40px; } }
 @media screen and (max-width: 700px) {
   .banner-contato .contato-content .contato-btn {
     width: 100%; }
@@ -474,6 +499,61 @@ template {
     .container__sobre .card__sobre .sobre__content .sobre__content__text p {
       margin: 20px 0px; }
 
+@media (max-width: 1366px) {
+  .container__sobre .card__sobre .sobre__content .sobre__content__title h5 {
+    font-size: 1.625em; }
+  .container__sobre .card__sobre .sobre__content .sobre__content__text p {
+    font-size: 1.25em; } }
+@media (max-width: 1024px) {
+  .container__sobre .card__sobre .sobre__content {
+    padding: 50px; }
+    .container__sobre .card__sobre .sobre__content .sobre__content__title h5 {
+      font-size: 2.1875em; }
+    .container__sobre .card__sobre .sobre__content .sobre__content__text p {
+      font-size: 1.375em; } }
+@media (max-width: 768px) {
+  .container__sobre .card__sobre {
+    flex-direction: column; }
+    .container__sobre .card__sobre:nth-child(1) .sobre__content {
+      background-image: url("../../assets/img/sobre_img_1.png"); }
+    .container__sobre .card__sobre:nth-child(2) .sobre__content {
+      background-image: url("../../assets/img/sobre_img_2.png"); }
+    .container__sobre .card__sobre:nth-child(3) .sobre__content {
+      background-image: url("../../assets/img/sobre_img_3.png"); }
+    .container__sobre .card__sobre .sobre__img {
+      width: 100%;
+      display: none; }
+    .container__sobre .card__sobre .sobre__content {
+      position: relative;
+      width: 100%;
+      padding: 50px;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      .container__sobre .card__sobre .sobre__content::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8); }
+      .container__sobre .card__sobre .sobre__content .sobre__content__title {
+        position: relative;
+        z-index: 1; }
+        .container__sobre .card__sobre .sobre__content .sobre__content__title h5 {
+          font-size: 2.1875em; }
+      .container__sobre .card__sobre .sobre__content .sobre__content__text {
+        position: relative;
+        z-index: 1; }
+        .container__sobre .card__sobre .sobre__content .sobre__content__text p {
+          color: white; } }
+@media (max-width: 425px) {
+  .container__sobre .card__sobre .sobre__content {
+    padding: 30px; }
+    .container__sobre .card__sobre .sobre__content .sobre__content__title h5 {
+      font-size: 1.875em; }
+    .container__sobre .card__sobre .sobre__content .sobre__content__text p {
+      color: white; } }
 .portifolio {
   background: #F5F5F5; }
   .portifolio .content__portfolio {
@@ -486,7 +566,170 @@ template {
       min-width: 400px;
       height: auto;
       margin-bottom: 20px; }
+      .portifolio .content__portfolio figure:hover {
+        cursor: pointer; }
 
+@media (max-width: 1366px) {
+  .portifolio .content__portfolio figure {
+    width: 100%;
+    max-width: 300px; } }
+.vantagem {
+  margin: 0px 20px; }
+  .vantagem .container__vantagem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto; }
+    .vantagem .container__vantagem .card__vantagem {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 350px;
+      margin-bottom: 70px; }
+      .vantagem .container__vantagem .card__vantagem .card__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px; }
+        .vantagem .container__vantagem .card__vantagem .card__header figure {
+          width: 70px;
+          height: auto;
+          margin-right: 20px; }
+        .vantagem .container__vantagem .card__vantagem .card__header .card__header__title h5 {
+          font-size: 1.625em;
+          font-weight: bold; }
+
+@media (max-width: 1366px) {
+  .vantagem .container__vantagem {
+    max-width: 1100px;
+    margin: 0 auto; } }
+@media (max-width: 1089px) {
+  .vantagem .container__vantagem {
+    justify-content: space-around; } }
+@media (max-width: 725px) {
+  .vantagem .container__vantagem .card__vantagem {
+    max-width: 80%; } }
+@media (max-width: 425px) {
+  .vantagem .container__vantagem .card__vantagem {
+    max-width: 100%; }
+    .vantagem .container__vantagem .card__vantagem .card__header .card__header__title h5 {
+      font-size: 1.4375em; } }
+.contato {
+  background: #F5F5F5; }
+  .contato .container__contato {
+    width: calc(100% - 40px);
+    max-width: 1300px;
+    margin: 0 auto; }
+    .contato .container__contato .contato__content {
+      display: flex; }
+      .contato .container__contato .contato__content .contato__btn {
+        display: flex;
+        flex-direction: column;
+        margin-right: 80px; }
+        .contato .container__contato .contato__content .contato__btn ul li {
+          padding-bottom: 20px;
+          color: black; }
+          .contato .container__contato .contato__content .contato__btn ul li a, .contato .container__contato .contato__content .contato__btn ul li span {
+            font-size: 1.375em;
+            color: black;
+            font-weight: 700; }
+          .contato .container__contato .contato__content .contato__btn ul li i {
+            margin-right: 10px;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: #121671;
+            font-size: 22px;
+            color: white; }
+      .contato .container__contato .contato__content .form__contato {
+        flex: 1; }
+        .contato .container__contato .contato__content .form__contato input, .contato .container__contato .contato__content .form__contato textarea {
+          display: block;
+          width: 100%;
+          height: 50px;
+          padding: 10px 10px;
+          margin-bottom: 10px;
+          border-radius: 6px;
+          border: 2px solid #121671;
+          outline: none; }
+        .contato .container__contato .contato__content .form__contato textarea {
+          height: 150px; }
+        .contato .container__contato .contato__content .form__contato .btn__enviar {
+          border: 1px solid transparent;
+          color: white;
+          z-index: 10; }
+          .contato .container__contato .contato__content .form__contato .btn__enviar:hover {
+            background-color: white;
+            color: #0C315A;
+            border: 1px solid #121671;
+            transition: all 0.2s linear; }
+
+@media (max-width: 1366px) {
+  .contato .container__contato {
+    max-width: 1100px;
+    margin: 0 auto; } }
+@media (max-width: 768px) {
+  .contato .container__contato .contato__content {
+    flex-direction: column; } }
+@media (max-width: 499px) {
+  .contato .container__contato .contato__content .contato__btn {
+    margin-right: 0px; }
+    .contato .container__contato .contato__content .contato__btn ul li a, .contato .container__contato .contato__content .contato__btn ul li span {
+      font-size: 1.25em; } }
+footer {
+  background: black; }
+  footer .container__footer {
+    width: calc(100% - 40px);
+    max-width: 1300px;
+    margin: 0 auto; }
+    footer .container__footer .footer__content {
+      position: relative;
+      display: flex;
+      justify-content: space-between; }
+      footer .container__footer .footer__content .footer__mapa, footer .container__footer .footer__content .footer__servico, footer .container__footer .footer__content .footer__contato {
+        margin-top: 40px;
+        position: relative; }
+        footer .container__footer .footer__content .footer__mapa ul li, footer .container__footer .footer__content .footer__servico ul li, footer .container__footer .footer__content .footer__contato ul li {
+          margin-bottom: 10px; }
+          footer .container__footer .footer__content .footer__mapa ul li a, footer .container__footer .footer__content .footer__servico ul li a, footer .container__footer .footer__content .footer__contato ul li a {
+            font-size: 0.875em;
+            color: white;
+            font-weight: 600; }
+        footer .container__footer .footer__content .footer__mapa ul::after, footer .container__footer .footer__content .footer__servico ul::after, footer .container__footer .footer__content .footer__contato ul::after {
+          content: "MAPA DO SITE";
+          position: absolute;
+          top: -60px;
+          min-width: 140px;
+          font-size: 1.125em;
+          color: white;
+          font-weight: 600; }
+      footer .container__footer .footer__content .footer__servico ul::after {
+        content: "SERVIÇOS"; }
+      footer .container__footer .footer__content .footer__contato ul::after {
+        content: "CONTATO"; }
+      footer .container__footer .footer__content .footer__contato ul li a i {
+        margin-right: 20px;
+        padding: 10px;
+        border-radius: 1.25em;
+        background: red; }
+      footer .container__footer .footer__content .footer__contato ul li:nth-child(1) a i {
+        background: #121671; }
+      footer .container__footer .footer__content .footer__contato ul li:nth-child(2) a i {
+        background: #34af23; }
+
+@media (max-width: 1366px) {
+  footer .container__footer {
+    max-width: 1100px;
+    margin: 0 auto; } }
+@media (max-width: 679px) {
+  footer .container__footer .footer__content {
+    flex-direction: column; }
+    footer .container__footer .footer__content .footer__mapa, footer .container__footer .footer__content .footer__servico, footer .container__footer .footer__content .footer__contato {
+      margin-top: 80px; }
+      footer .container__footer .footer__content .footer__mapa:first-child, footer .container__footer .footer__content .footer__servico:first-child, footer .container__footer .footer__content .footer__contato:first-child {
+        margin-top: 40px; }
+      footer .container__footer .footer__content .footer__mapa ul::after, footer .container__footer .footer__content .footer__servico ul::after, footer .container__footer .footer__content .footer__contato ul::after {
+        margin-top: 20px; } }
 .header-contato {
   background: black;
   padding: 10px; }
@@ -530,6 +773,9 @@ template {
       .header-contato .content--header--contato .contato-tel ul li:first-child {
         margin-right: 20px; }
 
+@media (max-width: 425px) {
+  .header-contato {
+    display: none; } }
 header {
   display: flex;
   justify-content: space-between;
@@ -570,7 +816,7 @@ header {
     header .header--toogle-btn div {
       height: 4px;
       width: 100%;
-      background: black;
+      background: white;
       transition: all 0.3s ease-out; }
   header nav.active {
     transform: translate(0%);
@@ -615,19 +861,20 @@ header {
         position: relative;
         width: 100%;
         height: 100%;
-        background: white;
         transform: translate(100%);
         -webkit-box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.3);
         box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.3); }
-        header nav .nav--container ul li {
-          display: block;
-          margin-right: 0px;
-          margin-bottom: 30px; }
-          header nav .nav--container ul li:last-child {
-            margin-bottom: 0px; }
-          header nav .nav--container ul li a {
-            font-size: 1.75em;
-            font-weight: 700; }
+        header nav .nav--container ul {
+          background: #121671; }
+          header nav .nav--container ul li {
+            display: block;
+            margin-right: 0px;
+            margin-bottom: 30px; }
+            header nav .nav--container ul li:last-child {
+              margin-bottom: 0px; }
+            header nav .nav--container ul li a {
+              font-size: 1.75em;
+              font-weight: 700; }
     header nav.overlay {
       position: absolute;
       height: 100vh;
@@ -648,7 +895,7 @@ header {
         background: none;
         overflow: hidden; }
         header nav.overlay .nav--container ul {
-          background: white;
+          background: #121671;
           width: 25%;
           min-width: 271px;
           height: 100vh;
@@ -701,5 +948,111 @@ header {
     font-weight: 500; }
   .card .card__content .card__text {
     font-size: 1.125em; }
+
+@media (max-width: 895px) {
+  .card {
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px; } }
+@media (max-width: 683px) {
+  .card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 300px; } }
+.modal__lightbox {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10; }
+  .modal__lightbox.active {
+    display: flex; }
+    .modal__lightbox.active .modal__container {
+      animation: scale-up 0.3s linear both; }
+  .modal__lightbox .prev, .modal__lightbox .next {
+    padding: 15px;
+    font-size: 3.125em;
+    color: white; }
+    .modal__lightbox .prev:hover, .modal__lightbox .next:hover {
+      cursor: pointer; }
+  .modal__lightbox .modal__container {
+    width: 50%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 0.3125em;
+    overflow: hidden; }
+    .modal__lightbox .modal__container.fade-top {
+      animation: fade-top 0.3s linear both; }
+    .modal__lightbox .modal__container.fade-bottom {
+      animation: fade-bottom 0.3s linear both; }
+    .modal__lightbox .modal__container.fade-bottom {
+      animation: fade-bottom 0.3s linear both; }
+    .modal__lightbox .modal__container.fade-left {
+      animation: fade-left 0.3s linear both; }
+    .modal__lightbox .modal__container.fade-right {
+      animation: fade-right 0.3s linear both; }
+    .modal__lightbox .modal__container img {
+      width: 100%;
+      height: auto; }
+
+@keyframes scale-up {
+  from {
+    opacity: 0;
+    transform: scale(0.5); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+@keyframes fade-top {
+  from {
+    opacity: 0;
+    transform: translateY(100%); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+@keyframes fade-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(-100%); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(100%); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-100%); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+@media (max-width: 425px) {
+  .modal__lightbox .prev, .modal__lightbox .next {
+    position: absolute;
+    top: 65%; }
+  .modal__lightbox .prev {
+    left: 40%;
+    transform: translateX(-50%); }
+  .modal__lightbox .next {
+    left: 60%;
+    transform: translateX(-50%); }
+  .modal__lightbox .modal__container {
+    width: calc(100% - 20px);
+    max-width: 700px;
+    height: auto;
+    border-radius: 0.3125em;
+    overflow: hidden; }
+    .modal__lightbox .modal__container img {
+      width: 100%;
+      height: auto; } }
 
 /*# sourceMappingURL=style.css.map */

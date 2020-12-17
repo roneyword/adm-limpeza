@@ -1,0 +1,122 @@
+.contato{
+  @extend .space-section;
+  background: #F5F5F5;
+  
+  .contato__title{
+    @extend .title-section;
+  
+    h2{
+      @extend .title;
+    }
+  }
+
+  .container__contato{
+    width: calc(100% - 40px);
+    max-width: 1300px;
+    margin: 0 auto;
+
+    .contato__content{
+      display: flex;
+
+        .contato__btn {
+          display: flex;
+          flex-direction: column;
+          margin-right: 80px;
+
+          ul{
+            li{
+              padding-bottom: 20px;
+              color: black;
+
+              a, span{
+                font-size: pxtoem(22);
+                color: black;
+                font-weight: 700;
+              }
+
+              i{
+                margin-right: 10px;
+                padding: 15px;
+                border-radius: 50%;
+                background-color: $primary;
+                font-size: 22px;
+                color: white;
+              }
+            }
+          }
+        }
+
+        .form__contato{
+          flex: 1;
+
+          input, textarea {
+            display: block;
+            width: 100%;
+            height: 50px;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 2px solid $primary;
+            outline: none;
+          }
+
+          textarea {
+            height: 150px;
+          }
+          
+          .btn__enviar{
+            @extend .btn-default;
+            border: 1px solid transparent;
+            color: white;
+            z-index: 10;
+
+            &:hover{
+              background-color: white;
+              color: #0C315A;
+              border: 1px solid $primary;
+              transition: all 0.2s linear; 
+            }
+          }
+        }
+    }
+  }
+}
+
+@media (max-width: 1366px){
+  .contato{
+    .container__contato{
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .contato{
+    .container__contato{
+      .contato__content{
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 499px){
+  .contato{
+    .container__contato{
+      .contato__content{
+        .contato__btn {
+          margin-right: 0px;
+
+          ul{
+            li{
+              a, span{
+                font-size: pxtoem(20);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -22,9 +22,26 @@
       height: auto;
       margin-bottom: 20px;
 
+      &:hover{
+        cursor: pointer;
+      }
+
       img{
         @extend .img__default;
       }
     }
   }
+}
+
+@media (max-width: 1366px){
+  .portifolio{
+  
+    .content__portfolio{
+  
+      figure{
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  } 
 }

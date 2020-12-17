@@ -39,3 +39,57 @@
     }
   }
 }
+
+@media (max-width: 527px){
+  .home{
+    min-height: 80vh;
+  
+    .home__content{
+  
+      .home__title{
+        font-size: pxtoem(50);
+      }
+  
+      .home__sub-title{
+        h5{
+          font-size: pxtoem(30);
+        }
+  
+        h1{
+          font-size: pxtoem(25);
+        }
+        
+      }
+    }
+  }
+}
+
+@media (max-width: 425px){
+  .home{
+    min-height: 70vh;
+  
+    .home__content{
+  
+      .home__title{
+        font-size: pxtoem(40);
+      }
+  
+      .home__sub-title{
+        h5{
+          font-size: pxtoem(25);
+        }
+  
+        h1{
+          font-size: pxtoem(20);
+        }
+        
+      }
+    }
+  }
+}
+
+@media (max-width: 375px){
+  .home{
+    min-height: 60vh;
+  }
+}

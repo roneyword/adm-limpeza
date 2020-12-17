@@ -1,5 +1,3 @@
-
-
 .card{
   width: 100%;
   max-width: 400px;
@@ -33,4 +31,20 @@
       font-size: pxtoem(18);
     }
   }
+}
+
+@media (max-width: 895px){
+  .card{
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+  } 
+}
+
+@media (max-width: 683px){
+  .card{
+    width: 100%;
+    max-width: 100%;
+    min-width: 300px;
+  } 
 }

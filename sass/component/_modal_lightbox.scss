@@ -1,0 +1,157 @@
+.modal__lightbox{
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+
+  &.active{
+    display: flex;
+
+    .modal__container{
+      animation: scale-up 0.3s linear both;
+    }   
+  }
+
+  .prev, .next{
+    padding: 15px;
+    font-size: pxtoem(50);
+    color: white;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .modal__container{
+    width: 50%;
+    max-width: 700px;
+    height: auto;
+    border-radius: pxtoem(5);
+    overflow: hidden;
+
+    &.fade-top{
+      animation: fade-top 0.3s linear both;
+    }
+
+    &.fade-bottom{
+      animation: fade-bottom 0.3s linear both;
+    }
+
+    &.fade-bottom{
+      animation: fade-bottom 0.3s linear both;
+    }
+
+    &.fade-left{
+      animation: fade-left 0.3s linear both;
+    }
+
+    &.fade-right{
+      animation: fade-right 0.3s linear both;
+    }
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@keyframes scale-up{
+  from{
+    opacity: 0;
+    transform: scale(0.5)
+  }
+
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-top{
+  from{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fade-bottom{
+  from{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fade-left{
+  from{
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fade-right{
+  from{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media (max-width: 425px){
+  .modal__lightbox{
+  
+    .prev, .next{
+      position: absolute;
+      top: 65%;
+    }
+
+    .prev{
+      left: 40%;
+      transform: translateX(-50%);
+    }
+
+    .next{
+      left: 60%;
+      transform: translateX(-50%);
+    }
+  
+    .modal__container{
+      width: calc(100% - 20px);
+      max-width: 700px;
+      height: auto;
+      border-radius: pxtoem(5);
+      overflow: hidden;
+  
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+

@@ -23,7 +23,7 @@
     <!-- ==================================================================== -->
     <!-- section header contato-->
     <!-- ==================================================================== -->
-    <div class="header-contato">
+    <div class="header-contato" id="top">
       <div class="container">
         <div class="content--header--contato">
           <div class="icons-social">
@@ -85,12 +85,12 @@
         <!-- <nav class=""> -->
         <div class="nav--container">
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SERVIÇOS</a></li>
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#">PORTIFÓLIO</a></li>
-            <li><a href="#">VANTAGENS</a></li>
-            <li><a href="#">CONTATO</a></li>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#servico">SERVIÇOS</a></li>
+            <li><a href="#sobre">SOBRE</a></li>
+            <li><a href="#portifolio">PARCEIROS</a></li>
+            <li><a href="#vantagem">VANTAGENS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
           </ul>
         </div>
       </nav>
@@ -123,7 +123,7 @@
     <!-- ==================================================================== -->
     <!-- section serviços -->
     <!-- ==================================================================== -->
-    <main class="servico">
+    <main class="servico" id="servico">
       <div class="container">
         <div class="card__container">
           <div class="card">
@@ -140,9 +140,7 @@
                   text ever since the 1500s, when an unknown printer took a
                   galley of type and scrambled it to make a type specimen book.
                   It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem
+                  into electronic typesetting
                 </p>
               </div>
             </div>
@@ -162,9 +160,7 @@
                   text ever since the 1500s, when an unknown printer took a
                   galley of type and scrambled it to make a type specimen book.
                   It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem
+                  into electronic typesetting
                 </p>
               </div>
             </div>
@@ -184,9 +180,7 @@
                   text ever since the 1500s, when an unknown printer took a
                   galley of type and scrambled it to make a type specimen book.
                   It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem
+                  into electronic typesetting
                 </p>
               </div>
             </div>
@@ -206,9 +200,7 @@
                   text ever since the 1500s, when an unknown printer took a
                   galley of type and scrambled it to make a type specimen book.
                   It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem
+                  into electronic typesetting
                 </p>
               </div>
             </div>
@@ -228,9 +220,7 @@
                   text ever since the 1500s, when an unknown printer took a
                   galley of type and scrambled it to make a type specimen book.
                   It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem
+                  into electronic typesetting
                 </p>
               </div>
             </div>
@@ -250,9 +240,7 @@
                   text ever since the 1500s, when an unknown printer took a
                   galley of type and scrambled it to make a type specimen book.
                   It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem
+                  into electronic typesetting
                 </p>
               </div>
             </div>
@@ -266,28 +254,24 @@
     <!-- ==================================================================== -->
     <!-- section banner entre em contato -->
     <!-- ==================================================================== -->
-    <div class="banner-contato js-menu-index">
+    <div class="banner-contato">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="contato-content">
-              <div class="contato-btn">
-                <h3>Entre em contato para fazer <br />um orçamento</h3>
-                <div>
-                  <a href="tel://11940756363"
-                    ><i class="fas fa-phone"></i>Ligue agora</a
-                  >
-                </div>
-              </div>
-
-              <figure class="contato-img">
-                <img
-                  src="./assets/img/banner_contato_img.png"
-                  alt="mão segurando celular"
-                />
-              </figure>
+        <div class="contato-content">
+          <div class="contato-btn">
+            <h3>Entre em contato para fazer <br />um orçamento</h3>
+            <div>
+              <a href="tel://11940756363"
+                ><i class="fas fa-phone"></i>Ligue agora</a
+              >
             </div>
           </div>
+
+          <figure class="contato-img">
+            <img
+              src="./assets/img/banner_contato_img.png"
+              alt="mão segurando celular"
+            />
+          </figure>
         </div>
       </div>
     </div>
@@ -297,7 +281,7 @@
     <!-- ==================================================================== -->
     <!-- section sobre -->
     <!-- ==================================================================== -->
-    <section>
+    <section id="sobre">
       <div class="container__sobre">
         <div class="card__sobre">
           <figure class="sobre__img">
@@ -344,6 +328,7 @@
             <img src="./assets/img/sobre_img_2.png" alt="" />
           </figure>
         </div>
+
         <div class="card__sobre">
           <figure class="sobre__img">
             <img src="./assets/img/sobre_img_3.png" alt="" />
@@ -373,42 +358,74 @@
     <!-- ==================================================================== -->
     <!-- section portifolio -->
     <!-- ==================================================================== -->
-    <section class="portifolio">
+    <section class="portifolio" id="portifolio">
       <div class="container">
         <div class="portifolio__title">
           <h2>Portifólio</h2>
         </div>
         <div class="content__portfolio">
           <figure>
-            <img src="./assets/img/portifolio/portifolio_img_1.png" alt="" />
+            <img
+              src="./assets/img/portifolio/portifolio_img_1.png"
+              data-img="portifolio_img_1.png"
+              alt=""
+            />
           </figure>
 
           <figure>
-            <img src="./assets/img/portifolio/portifolio_img_1.png" alt="" />
+            <img
+              src="./assets/img/portifolio/portifolio_img_2.png"
+              data-img="portifolio_img_2.png"
+              alt=""
+            />
           </figure>
 
           <figure>
-            <img src="./assets/img/portifolio/portifolio_img_1.png" alt="" />
+            <img
+              src="./assets/img/portifolio/portifolio_img_3.png"
+              data-img="portifolio_img_3.png"
+              alt=""
+            />
           </figure>
 
           <figure>
-            <img src="./assets/img/portifolio/portifolio_img_1.png" alt="" />
+            <img
+              src="./assets/img/portifolio/portifolio_img_1.png"
+              data-img="portifolio_img_1.png"
+              alt=""
+            />
           </figure>
 
           <figure>
-            <img src="./assets/img/portifolio/portifolio_img_1.png" alt="" />
+            <img
+              src="./assets/img/portifolio/portifolio_img_2.png"
+              data-img="portifolio_img_2.png"
+              alt=""
+            />
           </figure>
 
           <figure>
-            <img src="./assets/img/portifolio/portifolio_img_1.png" alt="" />
+            <img
+              src="./assets/img/portifolio/portifolio_img_3.png"
+              data-img="portifolio_img_3.png"
+              alt=""
+            />
           </figure>
 
           <figure>
-            <img src="./assets/img/portifolio/portifolio_img_1.png" alt="" />
+            <img
+              src="./assets/img/portifolio/portifolio_img_1.png"
+              data-img="portifolio_img_1.png"
+              alt=""
+            />
           </figure>
 
           <figure>
-            <img src="./assets/img/portifolio/portifolio_img_1.png" alt="" />
+            <img
+              src="./assets/img/portifolio/portifolio_img_2.png"
+              data-img="portifolio_img_2.png"
+              alt=""
+            />
           </figure>
         </div>
       </div>
@@ -419,15 +436,264 @@
     <!-- ==================================================================== -->
     <!-- section vantagem -->
     <!-- ==================================================================== -->
-    <section class="vantagem">
+    <section class="vantagem" id="vantagem">
       <div class="vantagem__title">
         <h2>Algumas Vantagens</h2>
+      </div>
+
+      <div class="container__vantagem">
+        <div class="card__vantagem">
+          <div class="card__header">
+            <figure>
+              <img src="./assets/img/vantagem_img_1.png" alt="" />
+            </figure>
+
+            <div class="card__header__title">
+              <h5>Limpeza Completa</h5>
+            </div>
+          </div>
+
+          <div class="card__text">
+            <p>
+              Os mais completos serviços de limpeza para os mais diversos tipos
+              de ambiente, que devem estar sempre impecáveis.
+            </p>
+          </div>
+        </div>
+
+        <div class="card__vantagem">
+          <div class="card__header">
+            <figure>
+              <img src="./assets/img/vantagem_img_2.png" alt="" />
+            </figure>
+
+            <div class="card__header__title">
+              <h5>Profissionais Qualificados</h5>
+            </div>
+          </div>
+
+          <div class="card__text">
+            <p>
+              Os serviços do ADM são realizados por profissionais treinados e
+              altamente capacitados
+            </p>
+          </div>
+        </div>
+
+        <div class="card__vantagem">
+          <div class="card__header">
+            <figure>
+              <img src="./assets/img/vantagem_img_3.png" alt="" />
+            </figure>
+
+            <div class="card__header__title">
+              <h5>Limpeza Interna e Externa</h5>
+            </div>
+          </div>
+
+          <div class="card__text">
+            <p>
+              Limpeza completa, desde as janelas e exteriores até a conservação
+              das áreas internas dos prédios e/ou condomínios.
+            </p>
+          </div>
+        </div>
+
+        <div class="card__vantagem">
+          <div class="card__header">
+            <figure>
+              <img src="./assets/img/vantagem_img_4.png" alt="" />
+            </figure>
+
+            <div class="card__header__title">
+              <h5>Jardinagem</h5>
+            </div>
+          </div>
+
+          <div class="card__text">
+            <p>
+              Serviços de jardinagem para ambientes internos e externos, sempre
+              visando o cuidado para que a imagem da empresa dos clientes esteja
+              sempre bonita e bem conservada.
+            </p>
+          </div>
+        </div>
+
+        <div class="card__vantagem">
+          <div class="card__header">
+            <figure>
+              <img src="./assets/img/vantagem_img_5.png" alt="" />
+            </figure>
+
+            <div class="card__header__title">
+              <h5>Manutenção e Reparos</h5>
+            </div>
+          </div>
+
+          <div class="card__text">
+            <p>
+              Os melhores profissionais e equipamentos para manutenção e
+              conservação de última tecnologia, além da utilização dos melhores
+              produtos.
+            </p>
+          </div>
+        </div>
+
+        <div class="card__vantagem">
+          <div class="card__header">
+            <figure>
+              <img src="./assets/img/vantagem_img_6.png" alt="" />
+            </figure>
+
+            <div class="card__header__title">
+              <h5>Serviços Diversos</h5>
+            </div>
+          </div>
+
+          <div class="card__text">
+            <p>
+              Recepcionistas, atendentes, mensageiros, vigias, manobristas,
+              jardineiros, pintores e muitos outros. não importa a necessidade,
+              a ADM tem a solução
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- ==================================================================== -->
     <!-- section vantagem -->
     <!-- ==================================================================== -->
+    <!-- ==================================================================== -->
+    <!-- section contato -->
+    <!-- ==================================================================== -->
+    <section class="contato" id="contato">
+      <div class="contato__title">
+        <h2>Contato</h2>
+      </div>
+
+      <div class="container__contato">
+        <div class="contato__content">
+          <div class="contato__btn">
+            <ul>
+              <li>
+                <a href="tel://11991888484"
+                  ><i class="fas fa-phone-alt"></i>(11) 99188-8484</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/5511991888484"
+                  ><i class="fab fa-whatsapp-square"></i>(11) 97326-6767</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com.br/maps/place/Osasco/@-23.5277531,-46.7781028,17z/data=!3m1!4b1!4m5!3m4!1s0x94ceff1ae477dcc1:0x882e4ddd0f5f18f3!8m2!3d-23.527758!4d-46.7759141"
+                  target="_blank"
+                  s
+                  ><i class="fas fa-map-marked-alt"></i>SP, Osasco</a
+                >
+              </li>
+              <li>
+                <a href="mailto:instaladoraberti@hotmail.com"
+                  ><i class="fas fa-envelope"></i
+                  >instaladoraberti@hotmail.com</a
+                >
+              </li>
+              <li>
+                <i class="far fa-clock"></i><span>seg a sex, 8:00 - 18:00</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form__contato">
+            <input type="text" placeholder="Nome" required />
+            <input type="email" placeholder="E-mail" required />
+            <input type="text" placeholder="Telefone" required />
+            <textarea
+              rows="4"
+              cols="50"
+              placeholder="Digite sua mensagem..."
+              title="Digite sua mensagem"
+              required
+            ></textarea>
+            <button class="btn__enviar" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ==================================================================== -->
+    <!-- section contato -->
+    <!-- ==================================================================== -->
+
+    <!-- ==================================================================== -->
+    <!-- section footer -->
+    <!-- ==================================================================== -->
+    <footer>
+      <div class="container__footer">
+        <div class="footer__content">
+          <div class="footer__mapa">
+            <ul>
+              <li><a href="#top">HOME</a></li>
+              <li><a href="#servico">SERVIÇOS</a></li>
+              <li><a href="#sobre">SOBRE</a></li>
+              <li><a href="#portifolio">PORTIFÓLIO</a></li>
+              <li><a href="#vantagem">VANTAGENS</a></li>
+              <li><a href="#contato">CONTATO</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__servico">
+            <ul>
+              <li><a href="">LIMPEZA</a></li>
+              <li><a href="">MANUTENÇÃO</a></li>
+              <li><a href="">REFORMA</a></li>
+              <li><a href="">JARDINAGEM</a></li>
+              <li><a href="">PINTURA</a></li>
+              <li><a href="">PORTARIA</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__contato">
+            <ul>
+              <li>
+                <a href="tel://11991888484"
+                  ><i class="fas fa-phone-alt"></i>(11) 99188-8484</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/5511991888484"
+                  ><i class="fab fa-whatsapp-square"></i>(11) 97326-6767</a
+                >
+              </li>
+              <li>
+                <a href="mailto:instaladoraberti@hotmail.com"
+                  ><i class="fas fa-envelope"></i
+                  >instaladoraberti@hotmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ==================================================================== -->
+    <!-- section footer -->
+    <!-- ==================================================================== -->
+
+    <div class="modal__lightbox" id="modal-lb">
+      <div class="prev">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <figure class="modal__container teste color">
+        <img src="./assets/img/portifolio/portifolio_img_1.png" alt="" />
+      </figure>
+      <div class="next">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
 
     <script type="module" src="js/index.js"></script>
+    <script src="./js/vendor/smoothScroll/smooth-scroll.min.js"></script>
+    <script src="./js/vendor/smoothScroll/smooth-scroll.polyfills.min.js"></script>
   </body>
 </html>
