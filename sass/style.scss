@@ -4,43 +4,44 @@
 // Abstract
 // ==========================================================================
 
-@import "abstract/functions.scss";
-@import "abstract/variables.scss";
-@import "abstract/mixins.scss";
+@import "abstract/functions";
+@import "./abstract/functions";
+@import "abstract/variables";
+@import "abstract/mixins";
 
 // ==========================================================================
 // Vendor
 // ==========================================================================
 
-@import "vendor/normalize.scss";
+@import "vendor/normalize";
 
 // ==========================================================================
 // Base
 // ==========================================================================
 
-@import "base/fonts.scss";
-@import "base/grid.scss";
-@import "base/btn_default.scss";
-@import "base/global.scss";
+@import "base/fonts";
+@import "base/grid";
+@import "base/btn_default";
+@import "base/global";
 
 // ==========================================================================
 // Section
 // ==========================================================================
 
-@import "sections/home.scss";
-@import "sections/servicos.scss";
-@import "sections/banner_contato.scss";
-@import "sections/sobre.scss";
-@import "sections/portifolio.scss";
-@import "sections/vantagem.scss";
-@import "sections/contato.scss";
-@import "sections/footer.scss";
+@import "sections/home";
+@import "sections/servicos";
+@import "sections/banner_contato";
+@import "sections/sobre";
+@import "sections/parceiros";
+@import "sections/vantagem";
+@import "sections/contato";
+@import "sections/footer";
 
 // ==========================================================================
 // Component
 // ==========================================================================
 
-@import "component/header_contato.scss";
-@import "component/header.scss";
-@import "component/card.scss";
-@import "component/modal_lightbox.scss";
+@import "component/header_contato";
+@import "component/header";
+@import "component/card";
+@import "component/btn_floating";
