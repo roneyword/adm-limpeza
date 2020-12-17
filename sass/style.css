@@ -372,7 +372,7 @@ template {
   width: calc(100% - 40px);
 }
 
-.btn-default, .home .home__content .home__btn a, .banner-contato .contato-content .contato-btn div a, .contato .container__contato .contato__content .form__contato .btn__enviar, .btn__floating__contato .btn__floating__content .btn__floating__actions button {
+.btn-default, .home .home__content .home__btn a, .banner-contato .contato-content .contato-btn div a, .contato .container__contato .contato__content .form__contato .btn__enviar, .btn__floating__contato .btn__floating__content .btn__floating__actions a {
   background: #121671;
   padding: 15px 50px;
   border: none;
@@ -1714,7 +1714,6 @@ header nav .nav--container ul li a {
   background-color: white;
   -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
 }
 
 .btn__floating__contato .btn__floating__content:before {
@@ -1732,6 +1731,8 @@ header nav .nav--container ul li a {
 .btn__floating__contato .btn__floating__content .btn__floating__text {
   background-color: #121671;
   padding: 20px 20px 10px 20px;
+  border-top-right-radius: 0.3125em;
+  border-top-left-radius: 0.3125em;
 }
 
 .btn__floating__contato .btn__floating__content .btn__floating__text h3 {
@@ -1741,6 +1742,13 @@ header nav .nav--container ul li a {
 }
 
 .btn__floating__contato .btn__floating__content .btn__floating__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
 }
 
@@ -1755,9 +1763,8 @@ header nav .nav--container ul li a {
   outline: none;
 }
 
-.btn__floating__contato .btn__floating__content .btn__floating__actions button {
-  width: 100%;
-  padding: 15px 35px;
+.btn__floating__contato .btn__floating__content .btn__floating__actions a {
+  max-width: 77%;
   background-color: #34af23;
 }
 
@@ -1777,6 +1784,12 @@ header nav .nav--container ul li a {
   color: white;
   border-radius: 50%;
   background-color: #121671;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn__floating__contato .btn__icon:hover {
+  cursor: pointer;
 }
 
 @-webkit-keyframes fade-top {
