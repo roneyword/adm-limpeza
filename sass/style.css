@@ -381,7 +381,7 @@ template {
   font-weight: 600;
 }
 
-.title, .container__sobre .card__sobre .sobre__content .sobre__content__title h5, .portifolio .portifolio__title h2, .vantagem .vantagem__title h2, .contato .contato__title h2 {
+.title, .container__sobre .card__sobre .sobre__content .sobre__content__title h5, .parceiros .parceiros__title h2, .vantagem .vantagem__title h2, .contato .contato__title h2 {
   font-size: 2.5em;
   font-weight: 600;
   color: #F6CF00;
@@ -392,11 +392,11 @@ template {
   color: black;
 }
 
-.space-section, .portifolio, .vantagem, .contato, footer {
+.space-section, .parceiros, .vantagem, .contato, footer {
   padding: 80px 0px;
 }
 
-.title-section, .portifolio .portifolio__title, .vantagem .vantagem__title, .contato .contato__title {
+.title-section, .parceiros .parceiros__title, .vantagem .vantagem__title, .contato .contato__title {
   margin-bottom: 50px;
   text-align: center;
 }
@@ -767,233 +767,32 @@ template {
   }
 }
 
-.portifolio {
+.parceiros {
   background: #F5F5F5;
 }
 
-.portifolio .content__portfolio .blog-card {
+.parceiros .content__parceiros figure {
+  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 233px;
-  margin: 1rem auto;
-  -webkit-box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.6%;
-  background: white;
-  line-height: 1.4;
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.portifolio .content__portfolio .blog-card a {
-  color: inherit;
-}
-
-.portifolio .content__portfolio .blog-card a:hover {
-  color: #F6CF00;
-}
-
-.portifolio .content__portfolio .blog-card:hover .photo {
-  -webkit-transform: scale(1.3) rotate(3deg);
-          transform: scale(1.3) rotate(3deg);
-}
-
-.portifolio .content__portfolio .blog-card .meta {
-  position: relative;
-  z-index: 0;
-  height: 200px;
-}
-
-.portifolio .content__portfolio .blog-card .photo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-.portifolio .content__portfolio .blog-card .details,
-.portifolio .content__portfolio .blog-card .details ul {
-  margin: auto;
-  padding: 0;
-  list-style: none;
-}
-
-.portifolio .content__portfolio .blog-card .details {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -100%;
-  margin: auto;
-  -webkit-transition: left .2s;
-  transition: left .2s;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  font-size: .9rem;
+  height: 200px;
+  padding: 20px;
+  border: 10px solid white;
+  border-radius: 0.3125em;
+  overflow: hidden;
 }
 
-.portifolio .content__portfolio .blog-card .details a {
-  -webkit-text-decoration: dotted underline;
-          text-decoration: dotted underline;
-}
-
-.portifolio .content__portfolio .blog-card .details ul li {
-  display: inline-block;
-}
-
-.portifolio .content__portfolio .blog-card .details .author:before {
-  font-family: FontAwesome;
-  margin-right: 10px;
-  content: "\f007";
-}
-
-.portifolio .content__portfolio .blog-card .details .date:before {
-  font-family: FontAwesome;
-  margin-right: 10px;
-  content: "\f133";
-}
-
-.portifolio .content__portfolio .blog-card .details .tags ul:before {
-  font-family: FontAwesome;
-  content: "\f02b";
-  margin-right: 10px;
-}
-
-.portifolio .content__portfolio .blog-card .details .tags li {
-  margin-right: 2px;
-}
-
-.portifolio .content__portfolio .blog-card .details .tags li:first-child {
-  margin-left: -4px;
-}
-
-.portifolio .content__portfolio .blog-card .description {
-  padding: 1rem;
-  background: white;
-  position: relative;
-  z-index: 1;
-}
-
-.portifolio .content__portfolio .blog-card .description h1 {
-  line-height: 1;
-  margin: 0;
-  font-size: 1.7rem;
-}
-
-.portifolio .content__portfolio .blog-card .description h2 {
-  font-size: 1rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #a2a2a2;
-  margin-top: 5px;
-}
-
-.portifolio .content__portfolio .blog-card .description .read-more {
-  text-align: right;
-}
-
-.portifolio .content__portfolio .blog-card .description .read-more a {
-  color: #F6CF00;
-  display: inline-block;
-  position: relative;
-}
-
-.portifolio .content__portfolio .blog-card .description .read-more a:after {
-  content: "\f061";
-  font-family: FontAwesome;
-  margin-left: -10px;
-  opacity: 0;
-  vertical-align: middle;
-  -webkit-transition: margin .3s, opacity .3s;
-  transition: margin .3s, opacity .3s;
-}
-
-.portifolio .content__portfolio .blog-card .description .read-more a:hover:after {
-  margin-left: 5px;
-  opacity: 1;
-}
-
-.portifolio .content__portfolio .blog-card p {
-  position: relative;
-  margin: 1rem 0 0;
-}
-
-.portifolio .content__portfolio .blog-card p:first-of-type {
-  margin-top: 1.25rem;
-}
-
-.portifolio .content__portfolio .blog-card p:first-of-type:before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  background: #F6CF00;
-  width: 35px;
-  top: -0.75rem;
-  border-radius: 3px;
-}
-
-.portifolio .content__portfolio .blog-card:hover .details {
-  left: 0%;
-}
-
-@media (min-width: 640px) {
-  .portifolio .content__portfolio .blog-card {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    max-width: 700px;
-  }
-  .portifolio .content__portfolio .blog-card .meta {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-    height: auto;
-  }
-  .portifolio .content__portfolio .blog-card .description {
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
-  }
-  .portifolio .content__portfolio .blog-card .description:before {
-    -webkit-transform: skewX(-3deg);
-            transform: skewX(-3deg);
-    content: "";
-    background: #fff;
-    width: 30px;
-    position: absolute;
-    left: -10px;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  .portifolio .content__portfolio .blog-card.alt {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .portifolio .content__portfolio .blog-card.alt .description:before {
-    left: inherit;
-    right: -10px;
-    -webkit-transform: skew(3deg);
-            transform: skew(3deg);
-  }
-  .portifolio .content__portfolio .blog-card.alt .details {
-    padding-left: 25px;
-  }
+.parceiros .content__parceiros figure img {
+  width: 100%;
+  height: auto;
 }
 
 .vantagem {
