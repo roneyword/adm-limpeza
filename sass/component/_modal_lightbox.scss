@@ -28,12 +28,10 @@
     }
   }
 
-  .modal__container{
+  .modal__content{
     width: 50%;
     max-width: 700px;
     height: auto;
-    border-radius: pxtoem(5);
-    overflow: hidden;
 
     &.fade-top{
       animation: fade-top 0.3s linear both;
@@ -55,11 +53,22 @@
       animation: fade-right 0.3s linear both;
     }
 
-    img{
-      width: 100%;
-      height: auto;
+    figure{
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .modal__title{
+      margin-top: 20px;
+      h3{
+        font-size: pxtoem(22);
+        color: white;
+      }
     }
   }
+
+    
 }
 
 @keyframes scale-up{
@@ -127,7 +136,7 @@
   
     .prev, .next{
       position: absolute;
-      top: 65%;
+      top: 79%;
     }
 
     .prev{
@@ -140,16 +149,17 @@
       transform: translateX(-50%);
     }
   
-    .modal__container{
+    .modal__content{
       width: calc(100% - 20px);
       max-width: 700px;
       height: auto;
-      border-radius: pxtoem(5);
       overflow: hidden;
   
-      img{
-        width: 100%;
-        height: auto;
+      figure{
+        img{
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }

@@ -2,10 +2,12 @@ export default function lightBox(){
 
 const galeryIMG = document.querySelectorAll('.content__portfolio img');
 const modalLightbox = document.querySelector('.modal__lightbox');
-const boxIMG = document.querySelector('.modal__container img');
-const containerIMG = document.querySelector('.modal__container');
+const boxIMG = document.querySelector('.modal__content img');
+const containerIMG = document.querySelector('.modal__content');
 const btnPrev = document.querySelector('.prev');
 const btnNext = document.querySelector('.next');
+const descriptionOverlay = [...document.querySelectorAll('.content__portfolio h3')];
+const descriptionModal = document.querySelector('.modal__content .modal__title h3')
 const arrayIMG = []
 const arrayClassEfect = ['fade-top', 'fade-bottom', 'fade-left', 'fade-right'];
 let urlIMG = './assets/img/portifolio/';
@@ -25,6 +27,7 @@ galeryIMG.forEach((img, index) => {
   img.addEventListener('click', () => {
     modalLightbox.classList.add('active');
     boxIMG.src = urlIMG + arrayIMG[index];
+    setDescriptionModal(index);
     current = index;
   })
 })
@@ -34,6 +37,7 @@ btnNext.addEventListener('click', () => {
   if(current >= arrayIMG.length - 1) return;
   current += 1;
   boxIMG.src = urlIMG + arrayIMG[current];
+  setDescriptionModal(current);
   removeClassContainerImg();
   randomClassEfect();
 });
@@ -42,13 +46,18 @@ btnPrev.addEventListener('click', () => {
   if(current <= 0) return
   current -= 1;
   boxIMG.src = urlIMG + arrayIMG[current];
+  setDescriptionModal(current);
   removeClassContainerImg();
   randomClassEfect();
 });
 
+const setDescriptionModal = (index) => {
+  descriptionModal.innerHTML = descriptionOverlay[index].innerHTML;
+}
+
 const removeClassContainerImg = () => {
   containerIMG.classList = "";
-  containerIMG.classList.add('modal__container');
+  containerIMG.classList.add('modal__content');
 }
 
 const randomClassEfect = () => {
