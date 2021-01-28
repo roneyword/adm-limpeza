@@ -1529,12 +1529,14 @@ header nav .nav--container ul li a {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.card .car__img {
+.card .card__img {
   width: 100%;
   height: auto;
 }
 
-.card .car__img img {
+.card .card__img img {
+  border-top-left-radius: 0.625em;
+  border-top-right-radius: 0.625em;
   width: 100%;
   height: auto;
 }

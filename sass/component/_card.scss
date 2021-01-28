@@ -9,11 +9,13 @@
   -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 
-  .car__img{
+  .card__img{
     width: 100%;
     height: auto;
 
     img{
+      border-top-left-radius: pxtoem(10);
+      border-top-right-radius: pxtoem(10);
       width: 100%;
       height: auto;
     }
