@@ -15,6 +15,17 @@
   <link rel="stylesheet" href="./css/vendor/owl_carousel/owl.theme.default.min.css" />
   <!-- <link rel="stylesheet" href="css/style.css" /> -->
   <link rel="stylesheet" href="./sass/style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.1.1/sweetalert2.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.1.1/sweetalert2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.2.0/vanilla-masker.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <style>
+      .cursor {cursor: pointer}
+    </style>
 </head>
 
 <body>
@@ -656,8 +667,8 @@
     <div class="contato__title">
       <h2>Contato</h2>
     </div>
-
     <div class="container__contato">
+      <div id="result"></div>
       <div class="contato__content">
         <div class="contato__btn">
           <ul>
@@ -680,12 +691,12 @@
         </div>
 
         <form class="form__contato">
-          <input type="text" placeholder="Nome" required />
-          <input type="email" placeholder="E-mail" required />
-          <input type="text" placeholder="Telefone" required />
-          <textarea rows="4" cols="50" placeholder="Digite sua mensagem..." title="Digite sua mensagem"
-            required></textarea>
-          <button class="btn__enviar" type="submit">Enviar</button>
+          <input type="text" placeholder="Nome" name="required[name]" required>
+          <input type="text" placeholder="E-mail" name="required[email]" required>
+          <input type="text" id="phone" placeholder="Telefone" name="required[phone]" required>
+          <textarea rows="4" cols="50" placeholder="Digite sua mensagem..." title="Digite sua mensagem" name="required[message]" required></textarea>
+          <button class="btn__enviar cursor" type="submit">Enviar</button>
+          Clique em enviar e aguarde alguns segundos
         </form>
       </div>
     </div>
@@ -793,6 +804,29 @@
   <script src="./js/vendor/smoothScroll/smooth-scroll.min.js"></script>
   <script src="./js/vendor/smoothScroll/smooth-scroll.polyfills.min.js"></script>
   <script type="module" src="js/index.js"></script>
+
+  <script>
+    $(document).ready(function(){
+        $("form").submit(function(event){
+            // Stop form from submitting normally
+            event.preventDefault();
+            
+            /* Serialize the submitted form control values to be sent to the web server with the request */
+            var formValues = $(this).serialize();
+            
+            // Send the form data using post
+            $.post("app/controller/contact.php", formValues, function(data){
+                // Display the returned data in browser
+                $("#result").html(data);
+            });
+        });
+    });
+
+    // Máscara do telefone
+    var telMask = ['(99) 99999-9999'];
+    var tel = document.querySelector('input[id=phone]');
+    VMasker(tel).maskPattern(telMask[0]);
+  </script>
 
   <script>
     $(document).ready(function () {
